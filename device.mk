@@ -561,6 +561,10 @@ PRODUCT_PACKAGES += \
     libvndksupport \
     libvndksupport.vendor
 
+# Xiaomi Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
