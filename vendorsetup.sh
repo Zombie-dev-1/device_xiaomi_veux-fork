@@ -16,8 +16,4 @@ echo "Cloning hardware related stuff..."
 # Hardware
 git clone https://github.com/Evolution-X/hardware_xiaomi hardware/xiaomi
 
-echo "Cloning Gcam stuff..."
-# Gcam
-git clone https://github.com/AswinOP/vendor_xiaomi_veux-gcam vendor/xiaomi/veux-gcam
-
 echo "Completed, proceeding to lunch"
