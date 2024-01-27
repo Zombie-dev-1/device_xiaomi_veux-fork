@@ -20,8 +20,4 @@ echo "Cloning Gcam stuff..."
 # Gcam
 git clone https://github.com/MrTopia/vendor_xiaomi_veux-gcam vendor/xiaomi/veux-gcam
 
-echo "Cloning Dolby Atmos Stuffs..."
-# Dolby
-git clone -b v1.1 https://github.com/userariii/hardware_Motorola_Dolby.git hardware/Motorola/Dolby
-
 echo "Completed, proceeding to lunch"
