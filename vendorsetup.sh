@@ -20,8 +20,4 @@ echo "Cloning Gcam stuff..."
 # Gcam
 git clone https://github.com/MrTopia/vendor_xiaomi_veux-gcam vendor/xiaomi/veux-gcam
 
-echo "Cloning ViPER stuffs..."
-# ViPER4AndroidFX
-git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX.git packages/apps/ViPERAndroidFX
-
 echo "Completed, proceeding to lunch"
