@@ -12,16 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from veux device
 $(call inherit-product, device/xiaomi/veux/device.mk)
 
-# Inherit some common FireDroid stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Rom Specific Flags
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_SUPPORTS_QUICK_TAP  := true
-
-# FireDroid Maintainer Flags
-FIREDROID_MAINTAINER := MrTopiA
-CUSTOM_BUILD_TYPE := OFFICIAL
+# Inherit some common AlphaDroid stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # AOSP Recovery
 TARGET_USES_AOSP_RECOVERY := true
@@ -32,11 +24,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Nuke AudioFX
 TARGET_EXCLUDES_AUDIOFX := true
 
-#Blur effect
+# Blur effect
 TARGET_ENABLE_BLUR := true	
 
 # Device identifier
-PRODUCT_NAME := aosp_veux
+PRODUCT_NAME := lineage_veux
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
@@ -44,3 +36,12 @@ PRODUCT_MODEL := POCO X4 Pro 5G
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# EPPE
+TARGET_DISABLE_EPPE := true
+
+# GAPPS
+WITH_GMS := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
