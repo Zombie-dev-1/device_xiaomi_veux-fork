@@ -305,9 +305,9 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
     libcodec2_hidl@1.1.vendor \
-    libcodec2_vndk.vendor
+    libcodec2_vndk.vendor \
     libOmxVdec \
-    libOmxVenc \
+    libOmxVenc 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml \
