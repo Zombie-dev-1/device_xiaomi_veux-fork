@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2023 The GenesisOS Project
 #               
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -12,16 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from veux device
 $(call inherit-product, device/xiaomi/veux/device.mk)
 
-# Inherit some common FireDroid stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common GENESIS stuff.
+$(call inherit-product, vendor/genesis/config/common_full_phone.mk)
 
-# Rom Specific Flags
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+# QUICK TAP
 TARGET_SUPPORTS_QUICK_TAP  := true
-
-# FireDroid Maintainer Flags
-FIREDROID_MAINTAINER := MrTopiA
-CUSTOM_BUILD_TYPE := OFFICIAL
 
 # AOSP Recovery
 TARGET_USES_AOSP_RECOVERY := true
@@ -32,11 +27,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Nuke AudioFX
 TARGET_EXCLUDES_AUDIOFX := true
 
-#Blur effect
-TARGET_ENABLE_BLUR := true	
+# Blur effect
+TARGET_ENABLE_BLUR := true
 
 # Device identifier
-PRODUCT_NAME := aosp_veux
+PRODUCT_NAME := genesis_veux
 PRODUCT_DEVICE := veux
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
