@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/genesis_veux.mk
+    $(LOCAL_DIR)/aosp_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    genesis_veux-user \
-    genesis_veux-userdebug \
-    genesis_veux-eng
+    aosp_veux-user \
+    aosp_veux-userdebug \
+    aosp_veux-eng
