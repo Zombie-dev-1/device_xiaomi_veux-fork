@@ -1,14 +1,14 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2023 The genesisOS Project
 #               
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_veux.mk
+    $(LOCAL_DIR)/genesis_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_veux-user \
-    lineage_veux-userdebug \
-    lineage_veux-eng
+    genesis_veux-user \
+    genesis_veux-userdebug \
+    genesis_veux-eng
